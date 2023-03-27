@@ -32,3 +32,22 @@
    * 命名形式 myTuple = (1,2,3)
 6. dict【字典】
    * 命名形式 myDict = {'name':'alisa', 'age':12}
+### 常用方法
+1. 查看数据类型： type(变量名)
+2. 类型转换：
+   1. int(x)
+      * `float -> int` 1.23 -> 1 取小数点前的整数，无关四舍五入
+      * `bool -> int` true -> 1 &nbsp;  false -> 0
+      * `str -> int` '1.23b' -> int 报错，非数字字符无法转换为整数
+   2. float(x)
+      * `int -> float`  111 -> 111.0
+      * `str -> float ` '111.1' -> 111.1
+   3. str(x)
+      * `bool -> str`  True -> True &nbsp; 不是 True -> 1
+   4. bool(x)
+      * `int -> bool` 正负数 -> True &nbsp; 0 -> False
+      * `float -> bool` 正负数 -> True &nbsp; 0 -> False
+      * `str -> bool` 字符串中有内容 -> True &nbsp; 字符串中没有内容 -> False 
+      * `list -> bool` 列表中有内容 -> True &nbsp; 列表中没有内容 -> False 
+      * `tuple -> bool` 元组中有内容 -> True &nbsp; 元组中没有内容 -> False 
+      * `dict -> bool` 字典中有内容 -> True &nbsp; 字典中没有内容 -> False 
