@@ -6,3 +6,7 @@
 weather = "晴天"
 print(weather)
 print('sss')
+
+ss = 'abc'
+sss = 'wwe'
+print(ss.join(sss))

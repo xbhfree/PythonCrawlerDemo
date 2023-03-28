@@ -32,6 +32,66 @@
    * 命名形式 myTuple = (1,2,3)
 6. dict【字典】
    * 命名形式 myDict = {'name':'alisa', 'age':12}
+### 运算符
+#### 算数运算符
+1. // 取整除 9//2==4
+2. ** 指数 10**20 10的20次方
+3. 字符串乘法，将字符串乘多少次
+4. 字符串加法，‘123’+‘456’=‘123456’
+#### 赋值运算符
+1. 单个赋值  a = 1
+2. 多个赋值  a = b = 1
+3. 逗号赋值  a,b,c = 1,2,3
+### 格式化输入输出
+* 输出：%s 字符串占位，  %d 数值占位
+### 流程控制语句
+1. if：
+    ``` python
+      if age > 7:
+         # if下面的代码必须是一个tab或者四个空格,四个空格相当于java的大括号了，可以一直往下续
+         print('ok')
+   ```
+   2. if else
+      ``` python
+         if age > 7:
+            # if下面的代码必须是一个tab或者四个空格,四个空格相当于java的大括号了，可以一直往下续
+            print('ok')
+         else:
+            print('not ok')
+      ```
+      3. if elif
+         ``` python
+            if age > 7:
+               # if下面的代码必须是一个tab或者四个空格,四个空格相当于java的大括号了，可以一直往下续
+               print('ok')
+            elif age < 1:
+               print('not ok')
+         ```
+         4. for 循环
+         ``` python
+               # for 变量 in 待遍历数据:
+               # 方法体
+               s = 'abcde'
+               for i in s:
+                  print(i)
+               # 打印 0-4
+               for i in range(5):
+                  print(i)
+               # 打印 1-4
+               for i in range(1,5):
+                  print(i)
+               # 打印 1,4,7  3为步长
+               for i in range(1,10,3):
+                  print(i)
+               # 打印 1,4,7  3为步长
+               a_list = ['a', 'b', 'c']
+               for i in range(len(a_list)):
+                  print(i)
+               # 打印带下表，enumerate枚举
+               a_list = ['a', 'b', 'c']
+               for index, i in enumerate(a_list):
+               print(index, i)
+         ```
 ### 常用方法
 1. 查看数据类型： type(变量名)
 2. 类型转换：
@@ -51,3 +111,14 @@
       * `list -> bool` 列表中有内容 -> True &nbsp; 列表中没有内容 -> False 
       * `tuple -> bool` 元组中有内容 -> True &nbsp; 元组中没有内容 -> False 
       * `dict -> bool` 字典中有内容 -> True &nbsp; 字典中没有内容 -> False 
+3. 输入接收：`input('请输入一些内容')`
+4. 字符串：
+   1. len 获取字符串长度
+   2. find 查找字符串中内容是否存在，在返回第一个找到的索引位置，不在返回-1
+   3. startswith,endswith 判断是否开头结束
+   4. count 计算次数
+   5. replace 替换后返回替换的字符串
+   6. split(x) 以x为切割线返回切割后的数组
+   7. upper，lower 大小写互换
+   8. strip 去空格，只能去字符串前后的空格
+   9. join 字符串拼接, a.join(b) 将字符串a以一个整体中插入到b的每一个字符后面
