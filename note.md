@@ -120,7 +120,50 @@ def 函数名(arg1, arg2):
    def 函数名(arg2 = 1, arg1 = 2):
       return result
    ```
-### 
+### 文件
+#### 文件的读写
+##### 文件的读
+* 语法
+  * `变量fp = open('路径',操作)`  操作为`'r','w','a'`等
+  * `content = fp.read` 或者`content = fp.readline` 或者 `content = fp.readlines`
+##### 文件的写
+* 语法： 
+  * `变量fp = open('路径',操作)`  操作为`'r','w','a'`等
+  * fp.write('')
+  * fp.close
+  * a操作为追加
+#### 文件的序列化和反序列化
+* 背景：默认情况下，对象不能被序列化到文件中
+* 序列化
+  * 方式：
+    1. dumps() 
+       * 步骤：
+         1. import json
+         2. fp = open('路径',操作)
+         3. o = json.dumps(object)
+         4. fp.write(o)
+         5. fp.close
+    2. dump()
+       * 步骤：
+         1. import json
+         2. fp = open('路径',操作)
+         3. json.dump(object, fp)
+         4. 一步到位
+* 反序列化
+  * 方式：
+    * 方式：
+      1. loads() 
+         * 步骤：
+           1. import json
+           2. fp = open('路径',操作)
+           3. content = fp.read()
+           4. result = json.loads(content)
+      2. load()
+         * 步骤：
+           1. import json
+           2. fp = open('路径',操作)
+           3. result = json.load(fp)
+           4. 一步到位
 ### 常用方法
 1. 查看数据类型： type(变量名)
 2. 类型转换：
