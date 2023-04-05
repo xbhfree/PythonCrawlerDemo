@@ -117,6 +117,7 @@ def 函数名(arg1, arg2):
    ```
 #### 返回值
    ``` python
+   # 函数只能先定义再使用
    def 函数名(arg2 = 1, arg1 = 2):
       return result
    ```
