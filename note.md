@@ -164,6 +164,14 @@ def 函数名(arg1, arg2):
            2. fp = open('路径',操作)
            3. result = json.load(fp)
            4. 一步到位
+### 异常
+* 格式
+  * ```python
+    try:
+        可能出现异常的代码
+    except: 异常的类型
+        友好的提示
+```
 ### 常用方法
 1. 查看数据类型： type(变量名)
 2. 类型转换：
@@ -237,4 +245,6 @@ def 函数名(arg1, arg2):
        # 打印项， ('name','alisa')即为项
        for 遍历key,value in myDict.items():
           print(key)
-       ```
+   ```
+## 库
+### urllib库
